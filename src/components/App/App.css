@@ -1,0 +1,16 @@
+.app {
+	background: #FFFFFF;
+	box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.12);
+	border-radius: 16px;
+	flex-direction: column;
+	padding: 100px 100px 80px 100px;
+}
+
+.app__title {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 66px;
+  letter-spacing: 0em;
+  text-align: left;
+}
