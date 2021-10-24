@@ -1,0 +1,47 @@
+.event {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	color: #fff;
+	height: 400px;
+	padding: 40px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 6px;
+}	
+
+.event__row {
+	display: flex;
+	justify-content: space-between;
+}
+
+.event__title {
+	font-size: 48px;
+	font-style: normal;
+	line-height: 66px;
+	letter-spacing: 0em;
+	text-align: left;
+}
+
+.event__date {
+	font-size: 48px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 80px;
+	letter-spacing: 0em;
+	text-align: left;
+	border: 2px #fff solid;
+	border-radius: 6px;
+	width: 80px;
+	height: 80px;
+	text-align: center;
+}
+
+.event__button {
+	height: 20px;
+	width: 20px;
+	padding: 0;
+	margin: 0;
+	cursor: pointer;
+}
