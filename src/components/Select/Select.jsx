@@ -10,7 +10,6 @@ const Select = ({ options, def, id, setFilter, filter, apiData }) => {
 		if ((filter.month !== "" && filter.month !== "0") && filter.city !== "") arr = filterAll(apiData, filter.city, filter.month)
 		if ((filter.month === "" || filter.month === "0") && filter.city === "") arr = apiData
 		setFilter(prev => ({ ...prev, data: arr }))
-		console.log(filter)
 	}, [filter.city, filter.month])
 
 	return (
