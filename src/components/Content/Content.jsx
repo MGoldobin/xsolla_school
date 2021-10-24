@@ -1,4 +1,4 @@
-import React, { useState, useEffect, Suspense } from 'react'
+import React, { useState, useEffect } from 'react'
 import Cookies from 'js-cookie'
 import Select from '../Select/Select'
 import Event from '../Event/Event'
