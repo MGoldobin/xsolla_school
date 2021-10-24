@@ -1,0 +1,25 @@
+.content__filters {
+	margin: 50px 0 30px
+}
+
+.content__filter-span {
+	font-weight: 500;
+	font-size: 24px;
+	margin-right: 20px;
+}
+
+.content__events {
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 40px;
+	min-height: 840px;
+}
+
+.content__notFound {
+	font-size: 36px;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	width: 100%;
+}
