@@ -26,6 +26,6 @@ export function filterMonth(arr, value) {
 	return arr.filter(item => getMonth(item.date) === value)
 }
 
-export function filterAll(arr, city, month) {
-	return arr.filter(item => getMonth(item.date) === month && item.city === city)
+export function filterFavorite(arr, favArr) {
+	return arr.filter(item => favArr.includes(item.id))
 }
