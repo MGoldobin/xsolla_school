@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import Cookies from 'js-cookie'
 import Select from '../Select/Select'
 import Event from '../Event/Event'
+import Favoritesbutton from '../Favoritesbutton/Favoritesbutton'
 import './Content.css'
 import { months } from '../../vendor/constants'
 import { uniqueArr } from '../../vendor/functions'
@@ -17,7 +18,8 @@ const Content = () => {
 	const [filter, setFilter] = useState({
 		data: [],
 		city: "",
-		month: ""
+		month: "",
+		favorite: false
 	})
 
 	useEffect(() => {
@@ -25,7 +27,7 @@ const Content = () => {
 			.then(res => res.ok ? res.json() : -1)
 			.then(res => {
 				setApiData(res)
-				setFilter({ data: res, city: "", month: "" })
+				setFilter({ data: res, city: "", month: "", favorite: false })
 			})
 	}, [])
 
@@ -46,9 +48,10 @@ const Content = () => {
 		<div className="content">
 			<div className="content__filters">
 				<span className="content__filter-span">City:</span>
-				<Select options={cities} def="" setFilter={setFilter} id="city" filter={filter} apiData={apiData} />
+				<Select options={cities} def="" setFilter={setFilter} id="city" filter={filter} apiData={apiData} favoriteArr={favoriteArr} />
 				<span className="content__filter-span">Month:</span>
-				<Select options={months} def="" setFilter={setFilter} id="month" filter={filter} apiData={apiData} />
+				<Select options={months} def="" setFilter={setFilter} id="month" filter={filter} apiData={apiData} favoriteArr={favoriteArr} />
+				<Favoritesbutton filter={filter} setFilter={setFilter} />
 			</div>
 			<div className="content__events">
 				{
