@@ -1,0 +1,15 @@
+.favorites_button {
+	border: none;
+	background-image: url('../../assets/favoriteNoClicked.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: #fff;
+	height: 50px;
+	width: 50px;
+	padding: 0;
+	margin: 0;
+}
+
+.favorites_button_active {
+	background-image: url('../../assets/favoriteClicked.png');
+}
