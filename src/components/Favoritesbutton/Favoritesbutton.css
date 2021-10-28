@@ -13,3 +13,9 @@
 .favorites_button_active {
 	background-image: url('../../assets/favoriteClicked.png');
 }
+
+@media screen and (max-width: 768px) {
+  .favorites_button {
+	margin-top: 20px;
+  }
+}

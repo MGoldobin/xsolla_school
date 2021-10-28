@@ -61,8 +61,15 @@
   }
 
 	.content__events {
-		min-height: 520px;
+		min-height: 250px;
 		grid-template-columns: repeat(1, 1fr);
 		grid-gap: 20px;
+  }
+}
+
+@media screen and (min-width: 1921px) {
+	.content__events {
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 40px;
   }
 }

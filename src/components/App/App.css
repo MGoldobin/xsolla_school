@@ -5,6 +5,7 @@
 	flex-direction: column;
 	padding: 100px 100px 80px;
   margin: 80px;
+  max-width: 1440px;
 }
 
 .app__title {
@@ -24,9 +25,13 @@
 }
 
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1024px) {
   .app__title {
     font-size: 36px;
+  }
+
+  .app {
+    padding: 100px 60px 80px;
   }
 }
 
