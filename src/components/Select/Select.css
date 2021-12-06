@@ -4,6 +4,10 @@
 	padding: 10px 20px;
 	border-radius: 6px;
 	margin-right: 30px;
+	background-image: url('../../assets/select.svg');
+	background-repeat: no-repeat;
+	background-position: 90% 50%;
+	appearance: none;
 }
 
 @media screen and (max-width: 768px) {
